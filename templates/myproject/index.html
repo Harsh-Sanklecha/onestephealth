@@ -1,0 +1,22 @@
+{% extends 'myproject/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="hero-wrapper">
+    <div class="hero-content d-flex">
+        <div class="hero-text">
+            <div class="text">
+                <h3 class="m-0">The care you need in </h3>
+                <h1>one step.</h1>
+                <hr>
+                <h5 class="mt-3">24/7 consultations</h5>
+                <button class="btn">Book Now</button>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="{% static 'images/hero.png' %}" alt="">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

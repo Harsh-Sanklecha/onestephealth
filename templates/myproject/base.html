@@ -1,0 +1,90 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Favivon -->
+    <link rel="shortcut icon" type="image/png" href="{% static '#' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+    <title>onestephealth</title>
+</head>
+<body>
+    
+
+    <!-- ---------- NavBar Start ---------- -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand ml-5" href="#">
+            <img src="#" width="30" height="30"
+                class="d-inline-block align-top" alt="">
+            onestephealth.com
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Doctors <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Consults</a>
+                <a class="nav-item nav-link" href="#">Diagnosis</a>
+                <a class="nav-item nav-link disabled" href="#">Security & Help</a>
+                <button class="btn btn-outline-secondary">Login / Signup</button>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ---------- NavBar End ---------- -->
+
+    <!-- ---------- Sub-Nav Start ---------- -->
+
+    <div class="sub-nav-wrapper m-4">
+        <div class="sub-nav d-flex">
+            <select class="ml-5">
+                <option selected> Hyderabad</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <input type="text" placeholder="Search for doctors, clinics, hospitals, etc">
+            <div class="mr-auto"></div>
+            <button class="btn mr-5">Try <span class="rounded ml-2"> Easypay </span> </button>
+        </div>
+    </div>
+
+    <!-- ---------- Sub-Nav End ---------- -->
+
+    <section id="main">
+        {% block content %}
+        {% endblock %}
+    </section>
+
+    <!-- JQuery JS -->
+    <script src="{% static 'js/jquery.3.5.1.js' %}"></script>
+    
+    <!-- Popper JS -->
+    <script src="{% static 'js/popper.js' %}"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    
+    <!-- Custom JS -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

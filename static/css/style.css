@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background: #fefefe;
+}
+
+:root {
+  --headColor: #333333;
+  --paraColor: #4d4d4d;
+  --primaryColor: #FECEFF;
+  --secondaryColor: #FFF4F4;
+  --sans: 'Open Sans', sans-serif;
+}
+
+/* Navbar Start */
+.navbar {
+  padding: 0.8rem 1.5rem;
+  background: #fefefe;
+  -webkit-box-shadow: 0 2px 5px #ccc;
+          box-shadow: 0 2px 5px #ccc;
+}
+
+.navbar a {
+  font-weight: 600;
+  font-family: var(--sans);
+}
+
+.navbar .navbar-nav a {
+  font-family: 'Roboto';
+  text-transform: none;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-nav button {
+  margin: 0 3rem;
+}
+
+/* Sub-Nav Start */
+.sub-nav select {
+  width: 10rem;
+  background: #fefefe;
+  border: 1px solid #ccc;
+  padding: 0 0.5rem;
+}
+
+.sub-nav input {
+  width: 25rem;
+  padding: 0 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.sub-nav button {
+  text-transform: none;
+  background: var(--secondaryColor);
+  border-radius: 2px;
+  border: 1px solid var(--secondaryColor);
+}
+
+.sub-nav button span {
+  background: var(--primaryColor);
+  padding: 0.2rem 0.5rem;
+}
+
+.hero-wrapper .hero-content {
+  background: var(--secondaryColor);
+  margin: 0;
+}
+
+.hero-wrapper .hero-content .hero-text {
+  width: 50%;
+}
+
+.hero-wrapper .hero-content .hero-text .text {
+  position: relative;
+  top: 50%;
+  left: 10%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.hero-wrapper .hero-content .hero-text .text h3 {
+  font-size: 1.5rem;
+}
+
+.hero-wrapper .hero-content .hero-text .text h1 {
+  position: relative;
+  top: -0.8rem;
+  left: -0.5rem;
+  margin: 0;
+  font-size: 5rem;
+  font-family: var(--sans);
+  font-weight: 900;
+}
+
+.hero-wrapper .hero-content .hero-text .text hr {
+  margin: 0;
+  background: #000;
+  width: 25rem;
+}
+
+.hero-wrapper .hero-content .hero-text .text button {
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  padding: 0.8rem 1.5rem;
+  background: var(--primaryColor);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.hero-wrapper .hero-content .hero-text .text button:hover {
+  background: #fd99ff;
+}
+/*# sourceMappingURL=style.css.map */
