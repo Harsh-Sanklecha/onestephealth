@@ -9,13 +9,17 @@
     <!-- Custom Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto&display=swap" rel="stylesheet">
     <!-- Favivon -->
-    <link rel="shortcut icon" type="image/png" href="{% static '#' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/heart.png' %}">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 
     <!-- Font awesome -->
     <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+
+    <!-- Slick carousel -->
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -30,7 +34,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand ml-5" href="#">
-            <img src="#" width="30" height="30"
+            <img src="{% static 'images/heart.png' %}" width="30" height="30"
                 class="d-inline-block align-top" alt="">
             onestephealth.com
         </a>
@@ -75,6 +79,60 @@
         {% endblock %}
     </section>
 
+    <!-- ---------- Footer Start ---------- -->
+
+    <div class="footer-wrapper p-3">
+        <div class="footer-top row p-5">
+            <div class="footer-top-content-wrapper col-lg-3">
+                <div class="footer-top-content">
+                    <h5> <a href="#">Home </a> </h5>
+                    <h5> <a href="#">Doctors </a> </h5>
+                    <h5> <a href="#">Consults </a> </h5>
+                    <h5> <a href="#">Diagnosis </a> </h5>
+                    <h5> <a href="#">Contact Us </a> </h5>
+                </div>
+            </div>
+            <div class="footer-top-content-wrapper col-lg-3">
+                <div class="footer-top-content">
+                    <h5> <a href="#"> <b>For patients </b></a> </h5>
+                    <h5> <a href="#">Search for doctors </a> </h5>
+                    <h5> <a href="#">Search for clinics </a> </h5>
+                    <h5> <a href="#">Search for hospital </a> </h5>
+                    <h5> <a href="#">Book Diagnostic Tests </a> </h5>
+                    <h5> <a href="#">Read health articles </a> </h5>
+                </div>
+            </div>
+            <div class="footer-top-content-wrapper col-lg-3">
+                <div class="footer-top-content">
+                    <h5> <a href="#"> <b>For Hospitals </b></a> </h5>
+                    <h5> <a href="#">Your Profile </a> </h5>
+                    <h5> <a href="#">Account </a> </h5>
+                    <h5> <a href="#">Manage Patients </a> </h5>
+                    <h5> <a href="#">Contact Us </a> </h5>
+                </div>
+            </div>
+            <div class="footer-top-content-wrapper col-lg-3">
+                <div class="footer-top-content">
+                    <h5> <a href="#">More </a> </h5>
+                    <h5> <a href="#">Help </a> </h5>
+                    <h5> <a href="#">Developers </a> </h5>
+                    <h5> <a href="#">Privacy Policy </a> </h5>
+                    <h5> <a href="#">Terms & Conditions </a> </h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <a href="#">
+                <img src="{% static 'images/heart.png' %}" width="30" height="30" alt="">
+                onestephealth.com
+            </a> <br>
+            <h6>Copyright © 2020, onestephealth. All rights reserved. </h6>
+        </div>
+    </div>
+
+    <!-- ---------- Footer End---------- -->
+
     <!-- JQuery JS -->
     <script src="{% static 'js/jquery.3.5.1.js' %}"></script>
     
@@ -83,6 +141,9 @@
     
     <!-- Bootstrap JS -->
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!-- slick -->
+    <script type="text/javascript" src="{% static 'slick/slick.min.js' %}"></script>
     
     <!-- Custom JS -->
     <script src="{% static 'js/main.js' %}"></script>
