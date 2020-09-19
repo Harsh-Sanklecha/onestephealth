@@ -1,0 +1,213 @@
+{% extends 'myproject/base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- -------- top Section Start -------- -->
+
+<div class="top-wrapper p-5">
+    <div class="consult-text d-flex">
+        <h4>Consult top doctors for any health concerns</h4>
+        <div class="mr-auto"></div>
+        <button class="btn btn-raised bg-white">See all specialities </button>
+    </div>
+    <div class="top-content-wrapper row align-items-center">
+        <div class="top-content col-lg-3">
+            <div class="top-content-inner border">
+                <img src="{% static 'images/cardiologist.jpg' %}" alt="">
+                <h6>Cardiologist</h6>
+                <button type="submit">Consult now</button>
+            </div>
+        </div>
+        <div class="top-content col-lg-3">
+            <div class="top-content-inner border">
+                <img src="{% static 'images/pulmonologist.jpg' %}" alt="">
+                <h6>Pulmonologist</h6>
+                <button type="submit">Consult now</button>
+            </div>
+        </div>
+        <div class="top-content col-lg-3">
+            <div class="top-content-inner border">
+                <img src="{% static 'images/physcian.jpg' %}" alt="">
+                <h6>General Physcian</h6>
+                <button type="submit">Consult now</button>
+            </div>
+        </div>
+        <div class="top-content col-lg-3">
+            <div class="top-content-inner border">
+                <img src="{% static 'images/orthopaedic.jpg' %}" alt="">
+                <h6>Orthopaedic</h6>
+                <button type="submit">Consult now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="top-wrapper p-5">
+    <div class="top-content-wrapper row  align-items-center">
+        <div class="top-content col-lg-3">
+            <div class="top-content-inner border">
+                <img src="{% static 'images/dermitology.jpg' %}" alt="">
+                <h6>Dermatology</h6>
+                <button type="submit">Consult now</button>
+            </div>
+        </div>
+        <div class="top-content col-lg-3">
+            <div class="top-content-inner border">
+                <img src="{% static 'images/optometry.jpg' %}" alt="">
+                <h6>Optometry</h6>
+                <button type="submit">Consult now</button>
+            </div>
+        </div>
+        <div class="top-content col-lg-3">
+            <div class="top-content-inner border">
+                <img src="{% static 'images/orthopology.jpg' %}" alt="">
+                <h6>Orthopology</h6>
+                <button type="submit">Consult now</button>
+            </div>
+        </div>
+        <div class="top-content col-lg-3">
+            <div class="top-content-inner border">
+                <img src="{% static 'images/obstetrics.jpg' %}" alt="">
+                <h6>Obstetrics</h6>
+                <button type="submit">Consult now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------- top Section End -------- -->
+
+<!-- -------- Avaiable Doctors Section -------- -->
+
+<div class="avaiable-doctors-wrapper ">
+    <div class="avaiable-doctors-inner p-5">
+        <h4>Top doctors avaiable</h4>
+
+        <div class="avaiable-doctors row">
+            <div class="avaiable-doctors-left col-lg-8">
+                <div class="doc-info border d-flex justify-content-around align-items-center">
+                    <img src="{% static 'images/doctor-smile.png' %}" alt="">
+                    <div class="doc-desc">
+                        <h5>Dr. Yugandar</h5>
+                        <button class="top mt-1 mb-2">top</button>
+                        <h6>Dentist</h6>
+                        <p>21 Years experience</p>
+                        <p>Vasundhara Hospital, moosapet.</p>
+                    </div>
+                    <div class="doc-appoint text-center">
+                        <span class="text-success"> <b>Avaiable</b></span> <br>
+                        <button class="book">Check Timeslot</button> <br>
+                        <button class="book">Book Appointment</button>
+                    </div>
+                </div>
+                <div class="doc-info border d-flex justify-content-around align-items-center">
+                    <img src="{% static 'images/doctor-smile.png' %}" alt="">
+                    <div class="doc-desc">
+                        <h5>Dr. Yugandar</h5>
+                        <button class="top mt-1 mb-2">top</button>
+                        <h6>Dentist</h6>
+                        <p>21 Years experience</p>
+                        <p>Vasundhara Hospital, moosapet.</p>
+                    </div>
+                    <div class="doc-appoint text-center">
+                        <span class="text-success"> <b>Avaiable</b></span> <br>
+                        <button class="book">Check Timeslot</button> <br>
+                        <button class="book">Book Appointment</button>
+                    </div>
+                </div>
+            </div>
+            <div class="avaiable-doctors-right p-0 col-lg-4 justify-items-self">
+                <div class="avaiable-doc-desc border p-4">
+                    <h4>Dr. Yugandar</h4>
+                    <p>Dentist</p>
+                    <p>Vasundhara Hospital, moosapet.</p>
+
+                    <div class="appoint-detail">
+                        <button class="btn  btn-outline-success mb-5">Today</button>
+                        <button class="btn  btn-outline-success active ml-1 mr-1 mb-5">Tomorrow</button>
+                        <button class="btn  btn-outline-success mb-5">Sun, 20Sept</button>
+                        
+                        <div class="time-slots d-flex align-items-end">
+                            <h6>Morning</h6>
+                            <div class="mr-auto"></div>
+                            <button class="btn  btn-outline-light">10:00</button>
+                            <button class="btn  btn-outline-light">11:00</button>
+                        </div>
+                        <hr>
+                        <div class="time-slots d-flex align-items-end">
+                            <h6>Afternoon</h6>
+                            <div class="mr-auto"></div>
+                            <button class="btn  btn-outline-light active">13:00</button>
+                            <button class="btn  btn-outline-light">14:00</button>
+                            <button class="btn  btn-outline-light">15:00</button>
+                        </div>
+                        <hr>
+                        <div class="time-slots d-flex align-items-end">
+                            <h6>Evening</h6>
+                            <div class="mr-auto"></div>
+                            <button class="btn  btn-outline-light">18:00</button>
+                            <button class="btn  btn-outline-light">19:00</button>
+                        </div>
+
+                        <div class="doc-detail-desc d-flex align-items-center">
+                            <img src="{% static 'images/doctor-smile.png' %}" width="50" height="50"  alt="">
+                            <div class="doc-name">
+                                <h5>Dr. Yugandar</h5>
+                                <h6>Dentist</h6>
+                            </div>
+                            <div class="mr-auto"></div>
+                            <button class="btn border">View</button>
+                        </div>
+                        <div class="doc-detail-desc d-flex align-items-center">
+                            <img src="{% static 'images/doctor-smile.png' %}" width="50" height="50"  alt="">
+                            <div class="doc-name">
+                                <h5>Vasundhara</h5>
+                                <h5>Hospital</h5>
+                            </div>
+                            <div class="mr-auto"></div>
+                            <button class="btn border">View</button>
+                        </div>
+                        <button class="book">Book Appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------- Avaiable Doctors End-------- -->
+
+
+<!-- -------- Top artices start -------- -->
+
+<div class="top-articles-wrapper border-top bg-white p-5">
+    <div class="top-articles-content row align-items-center">
+        <div class="top-articles-text col-lg-6">
+            <div class="text">
+                <h4>Read top articles of <br> health experts</h4>
+                <button>View all articles</button>
+            </div>
+        </div>
+        <div class="top-articles col-lg-6">
+            <div class="top-articles-inner-wrapper">
+                <div class="top-articles-inner">
+                    <img src="{% static 'images/covid.jpg' %}" alt="">
+                    <h6>corona virus</h6>
+                    <h4>Coronavirus disease advice for the public: Mythbusters</h4>
+                    <h6>w.h.o</h6>
+                </div>
+                <div class="top-articles-inner">
+                    <img src="{% static 'images/covid.jpg' %}" alt="">
+                    <h6>corona virus</h6>
+                    <h4>Coronavirus disease advice for the public: Mythbusters</h4>
+                    <h6>w.h.o</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------- Top artices End -------- -->
+
+
+{% endblock %}

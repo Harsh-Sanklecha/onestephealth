@@ -5,5 +5,6 @@ from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('doctors/', views.doctors, name ="doctors")
 
 ]

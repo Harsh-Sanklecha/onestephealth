@@ -179,6 +179,17 @@ body{
 }
 
 /* Frequent section */
+.top{
+    margin: 1rem 0 2rem 0;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.2rem 0.8rem;
+    border-radius: 8px;
+    color: #fefefe;
+    background: #009B10;
+    border: 1px solid #009B10;
+}
 .frequent-wrapper{
 
     h4{
@@ -186,17 +197,6 @@ body{
         font-family: var(--sans);
     }
 
-    .top{
-        margin: 1rem 0;
-        text-transform: uppercase;
-        font-size: 0.8rem;
-        font-weight: 600;
-        padding: 0.2rem 0.8rem;
-        border-radius: 8px;
-        color: #fefefe;
-        background: #009B10;
-        border: 1px solid #009B10;
-    }
 
     .frequent-content-wrapper{
         margin: 0;
@@ -339,6 +339,177 @@ body{
         h6{
             margin: 0.5rem 0;
             font-size: 0.9rem;
+        }
+    }
+}
+
+/* Doctors Page */
+.top-wrapper{
+    background: var(--secondaryColor);
+
+    .consult-text{
+        margin-bottom: 1.5rem;
+    }
+
+    h4{
+        font-size: 1.3rem;
+        font-family: var(--sans);
+    }
+
+    .top-content-wrapper{
+        margin: 0;
+
+        .top-content{
+
+            .top-content-inner{
+                background: #fefefe;
+                margin: auto 2rem;
+                text-align: center;
+                padding: 1rem;
+                border-radius: 20px;
+                box-shadow: 5px 5px 8px #ccc;
+
+                img{
+                    height: 5rem;
+                    width: 5rem;
+                }
+                h6{
+                    margin: 1rem 0;
+                }
+
+                button{
+                    padding: 0.5rem;
+                    border: 1px solid var(--primaryColor);
+                    border-radius: 5px;
+                    font-size: .8rem;
+                    background: var(--primaryColor);
+                    transition: 0.5s ease;
+
+                    &:hover{
+                        background: #fd99ff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Avaiable Doctors Left */ 
+.avaiable-doctors-wrapper{
+
+    .avaiable-doctors-inner{
+        box-shadow: 10px 10px 10px #ccc;
+        
+        h4{
+            font-family: var(--sans);
+            font-size: 1.3rem;
+        }
+
+        .avaiable-doctors-left{
+            padding: 1rem 5rem;
+
+            .doc-info{
+                border-radius: 10px;
+                padding: 1rem;
+                margin: 1rem;
+                border-radius: 10px;
+                box-shadow: 5px 8px 15px #ccc;
+                
+                img{
+                    width: 10rem;
+                    height: 10rem;
+                }
+
+                .doc-desc{
+                    padding: 1rem 2rem;
+
+                    h6{
+                        font-family: var(--sans);
+                    }
+
+                    p{
+                        margin: 0;
+                        font-size: 0.9rem;
+                    }
+
+                }
+                .doc-appoint{
+
+                    .book{
+                        padding: 0.5rem 1rem;
+                        margin: 0.5rem 0;
+                        font-size: 0.9rem;
+                        border: 1px solid var(--primaryColor);
+                        border-radius: 3px;
+                        background: var(--primaryColor);
+                        transition: 0.5s ease;
+
+                        &:hover{
+                            background: #fd99ff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .avaiable-doc-desc{
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #ccc;
+
+            p{
+                margin: 0;
+            }
+
+            .appoint-detail{
+                margin: 1rem 0;
+
+                .active{
+                    border: 1px solid var(--primaryColor);
+                    background: var(--primaryColor);
+                    color: var(--headColor);
+                }
+
+                .time-slots{
+                    h6{
+
+                    }
+                    button{
+                        margin: 0 0.5rem;
+                        border: 1px solid var(--paraColor);
+                        color: var(--paraColor);
+                    }
+
+                    .active{
+                        border:1px solid var(--primaryColor);
+                    }
+                }
+
+                .doc-detail-desc{
+                    margin: 2rem 0;
+
+                    img{
+                        margin-right: 1rem;
+                    }
+
+                    h5{
+                        margin: 0;
+                        font-size: 1rem;
+                    }
+                }
+                .book{
+                    padding: 0.5rem 1rem;
+                    margin: 0.5rem 0;
+                    font-size: 1rem;
+                    border: 1px solid var(--primaryColor);
+                    border-radius: 5px;
+                    background: var(--primaryColor);
+                    transition: 0.5s ease;
+
+                    &:hover{
+                        background: #fd99ff;
+                    }
+                }
+            }
         }
     }
 }

@@ -172,13 +172,8 @@ body {
 }
 
 /* Frequent section */
-.frequent-wrapper h4 {
-  font-size: 1.3rem;
-  font-family: var(--sans);
-}
-
-.frequent-wrapper .top {
-  margin: 1rem 0;
+.top {
+  margin: 1rem 0 2rem 0;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 600;
@@ -187,6 +182,11 @@ body {
   color: #fefefe;
   background: #009B10;
   border: 1px solid #009B10;
+}
+
+.frequent-wrapper h4 {
+  font-size: 1.3rem;
+  font-family: var(--sans);
 }
 
 .frequent-wrapper .frequent-content-wrapper {
@@ -327,5 +327,171 @@ body {
 .footer-wrapper .footer-bottom h6 {
   margin: 0.5rem 0;
   font-size: 0.9rem;
+}
+
+/* Doctors Page */
+.top-wrapper {
+  background: var(--secondaryColor);
+}
+
+.top-wrapper .consult-text {
+  margin-bottom: 1.5rem;
+}
+
+.top-wrapper h4 {
+  font-size: 1.3rem;
+  font-family: var(--sans);
+}
+
+.top-wrapper .top-content-wrapper {
+  margin: 0;
+}
+
+.top-wrapper .top-content-wrapper .top-content .top-content-inner {
+  background: #fefefe;
+  margin: auto 2rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 8px #ccc;
+          box-shadow: 5px 5px 8px #ccc;
+}
+
+.top-wrapper .top-content-wrapper .top-content .top-content-inner img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.top-wrapper .top-content-wrapper .top-content .top-content-inner h6 {
+  margin: 1rem 0;
+}
+
+.top-wrapper .top-content-wrapper .top-content .top-content-inner button {
+  padding: 0.5rem;
+  border: 1px solid var(--primaryColor);
+  border-radius: 5px;
+  font-size: .8rem;
+  background: var(--primaryColor);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.top-wrapper .top-content-wrapper .top-content .top-content-inner button:hover {
+  background: #fd99ff;
+}
+
+/* Avaiable Doctors Left */
+.avaiable-doctors-wrapper .avaiable-doctors-inner {
+  -webkit-box-shadow: 10px 10px 10px #ccc;
+          box-shadow: 10px 10px 10px #ccc;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner h4 {
+  font-family: var(--sans);
+  font-size: 1.3rem;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doctors-left {
+  padding: 1rem 5rem;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doctors-left .doc-info {
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 8px 15px #ccc;
+          box-shadow: 5px 8px 15px #ccc;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doctors-left .doc-info img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doctors-left .doc-info .doc-desc {
+  padding: 1rem 2rem;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doctors-left .doc-info .doc-desc h6 {
+  font-family: var(--sans);
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doctors-left .doc-info .doc-desc p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doctors-left .doc-info .doc-appoint .book {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  border: 1px solid var(--primaryColor);
+  border-radius: 3px;
+  background: var(--primaryColor);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doctors-left .doc-info .doc-appoint .book:hover {
+  background: #fd99ff;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc {
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 10px #ccc;
+          box-shadow: 5px 5px 10px #ccc;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc p {
+  margin: 0;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc .appoint-detail {
+  margin: 1rem 0;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc .appoint-detail .active {
+  border: 1px solid var(--primaryColor);
+  background: var(--primaryColor);
+  color: var(--headColor);
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc .appoint-detail .time-slots button {
+  margin: 0 0.5rem;
+  border: 1px solid var(--paraColor);
+  color: var(--paraColor);
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc .appoint-detail .time-slots .active {
+  border: 1px solid var(--primaryColor);
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc .appoint-detail .doc-detail-desc {
+  margin: 2rem 0;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc .appoint-detail .doc-detail-desc img {
+  margin-right: 1rem;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc .appoint-detail .doc-detail-desc h5 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc .appoint-detail .book {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  border: 1px solid var(--primaryColor);
+  border-radius: 5px;
+  background: var(--primaryColor);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc .appoint-detail .book:hover {
+  background: #fd99ff;
 }
 /*# sourceMappingURL=style.css.map */
