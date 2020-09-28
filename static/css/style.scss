@@ -63,15 +63,20 @@ body{
         border: 1px solid #ccc;
     }
 
-    button{
+    .search{
         text-transform: none;
+        width: 5rem;
         background: var(--secondaryColor);
         border-radius: 2px;
-        border: 1px solid var(--secondaryColor);
+        font-size: 0.9rem;
+        border: none;
+        cursor: pointer;
+    }
+
+    button{
         
-        span{
-            background:  var(--primaryColor);
-            padding: 0.2rem 0.5rem;
+        img{
+            height: 2rem;
         }
     }
 }
@@ -132,7 +137,7 @@ body{
 .spec-wrapper{
 
     h4{
-        font-size: 1.3rem;
+        // font-size: 1.3rem;
         font-family: var(--sans);
     }
 
@@ -153,12 +158,12 @@ body{
             .spec-inner{
                 padding: 1rem 2rem;
 
-                h6{
+                h5{
                     font-family: var(--sans);
                 }
 
                 p{
-                    font-size: 0.9rem;
+                    // font-size: 0.9rem;
                 }
 
                 button{
@@ -180,12 +185,12 @@ body{
 
 /* Frequent section */
 .top{
-    margin: 1rem 0 2rem 0;
+    margin: 0.5rem 0 2rem 0;
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 600;
-    padding: 0.2rem 0.8rem;
-    border-radius: 8px;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
     color: #fefefe;
     background: #009B10;
     border: 1px solid #009B10;
@@ -193,7 +198,7 @@ body{
 .frequent-wrapper{
 
     h4{
-        font-size: 1.3rem;
+        // font-size: 1.3rem;
         font-family: var(--sans);
     }
 
@@ -207,7 +212,7 @@ body{
                 text-align: center;
                 padding: 1rem;
                 border-radius: 20px;
-                box-shadow: 5px 5px 8px #ccc;
+                box-shadow: 2px 2px 8px #ccc;
 
                 img{
                     height: 5rem;
@@ -296,18 +301,15 @@ body{
 
 /* Quote */
 .quote-wrapper{
-    padding: 8rem;
+    padding: 5rem;
 
     .quote{
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
 
         h2{
+            font-family: 'Lobster';
             color: #F4BEBE;
             font-weight: 600;
-            font-size: 2rem;
+            font-size: 5rem;
         }
     }
 }
@@ -320,6 +322,11 @@ body{
     a{
         color: #000;
         text-decoration: none;
+        transition: 0.5s ease;
+
+        &:hover{
+            transform: translateX(1rem);
+        }
     }
 
     .footer-top-content-wrapper{
@@ -352,7 +359,6 @@ body{
     }
 
     h4{
-        font-size: 1.3rem;
         font-family: var(--sans);
     }
 
@@ -402,7 +408,6 @@ body{
         
         h4{
             font-family: var(--sans);
-            font-size: 1.3rem;
         }
 
         .avaiable-doctors-left{
@@ -430,6 +435,20 @@ body{
                     p{
                         margin: 0;
                         font-size: 0.9rem;
+                    }
+
+                    .book{
+                        padding: 0.5rem 1rem;
+                        margin: 0.5rem 0;
+                        font-size: 0.9rem;
+                        border: 1px solid var(--primaryColor);
+                        border-radius: 3px;
+                        background: var(--primaryColor);
+                        transition: 0.5s ease;
+
+                        &:hover{
+                            background: #fd99ff;
+                        }
                     }
 
                 }
@@ -463,6 +482,33 @@ body{
             .appoint-detail{
                 margin: 1rem 0;
 
+                .services-timing{
+
+                    h5{
+                        font-family: var(--sans);
+                    }
+
+                    ul{
+                        list-style-type: none;
+                    }
+                }
+
+                .photos{
+                    padding: 2rem 0;
+                    
+                    h5{
+                        font-family: var(--sans);
+                    }
+
+                    .photos-inner{
+
+                        img{
+                            height: 4rem;
+                            width: 4rem;
+                        }
+                    }
+                }
+
                 .active{
                     border: 1px solid var(--primaryColor);
                     background: var(--primaryColor);
@@ -470,9 +516,7 @@ body{
                 }
 
                 .time-slots{
-                    h6{
 
-                    }
                     button{
                         margin: 0 0.5rem;
                         border: 1px solid var(--paraColor);
@@ -509,6 +553,61 @@ body{
                         background: #fd99ff;
                     }
                 }
+            }
+        }
+    }
+}
+.book{
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    border: 1px solid var(--primaryColor);
+    border-radius: 5px;
+    background: var(--primaryColor);
+    transition: 0.5s ease;
+
+    &:hover{
+        background: #fd99ff;
+    }
+}
+.diagnosis-desc{
+
+    .diagnosis-desc-top {
+
+        .diagnosis-img{
+            overflow: hidden;
+
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .diagnosis-short-desc{
+            padding: 1rem 4rem;
+
+            h3{
+                font-family: var(--sans);
+            }
+        }
+    }
+
+    h4{
+        font-family: var(--sans);
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    .photos{
+        padding: 2rem 0;
+
+        .photos-inner{
+
+            img{
+                height: 10rem;
+                width: 10rem;
             }
         }
     }

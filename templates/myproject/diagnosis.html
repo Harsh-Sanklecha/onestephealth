@@ -1,42 +1,42 @@
 {% extends 'myproject/base.html' %}
 {% load static %}
-{% block title %} Doctors {% endblock %}
+{% block title %} Diagnosis {% endblock %}
 {% block content %}
 
 <!-- -------- top Section Start -------- -->
 
 <div class="top-wrapper p-5">
     <div class="consult-text d-flex">
-        <h4>Consult top doctors for any health concerns</h4>
+        <h4>Health checkup and screening</h4>
         <div class="mr-auto"></div>
         <button class="btn btn-raised bg-white">See all specialities </button>
     </div>
     <div class="top-content-wrapper row align-items-center">
         <div class="top-content col-lg-3">
             <div class="top-content-inner border">
-                <img src="{% static 'images/cardiologist.jpg' %}" alt="">
-                <h6>Cardiologist</h6>
+                <img src="{% static 'images/diabetes.jpg' %}" alt="">
+                <h6>Diabetes</h6>
                 <button class="btn" type="submit">Consult now</button>
             </div>
         </div>
         <div class="top-content col-lg-3">
             <div class="top-content-inner border">
-                <img src="{% static 'images/pulmonologist.jpg' %}" alt="">
-                <h6>Pulmonologist</h6>
+                <img src="{% static 'images/cancer.jpg' %}" alt="">
+                <h6>Cancer</h6>
                 <button class="btn" type="submit">Consult now</button>
             </div>
         </div>
         <div class="top-content col-lg-3">
             <div class="top-content-inner border">
-                <img src="{% static 'images/physcian.jpg' %}" alt="">
-                <h6>General Physcian</h6>
+                <img src="{% static 'images/liver.jpg' %}" alt="">
+                <h6>Liver Function Test</h6>
                 <button class="btn" type="submit">Consult now</button>
             </div>
         </div>
         <div class="top-content col-lg-3">
             <div class="top-content-inner border">
                 <img src="{% static 'images/orthopaedic.jpg' %}" alt="">
-                <h6>Orthopaedic</h6>
+                <h6>Complete Blood Count</h6>
                 <button class="btn" type="submit">Consult now</button>
             </div>
         </div>
@@ -48,7 +48,7 @@
         <div class="top-content col-lg-3">
             <div class="top-content-inner border">
                 <img src="{% static 'images/dermitology.jpg' %}" alt="">
-                <h6>Dermatology</h6>
+                <h6>Skin</h6>
                 <button class="btn" type="submit">Consult now</button>
             </div>
         </div>
@@ -62,14 +62,14 @@
         <div class="top-content col-lg-3">
             <div class="top-content-inner border">
                 <img src="{% static 'images/orthopology.jpg' %}" alt="">
-                <h6>Orthopology</h6>
+                <h6>Bone</h6>
                 <button class="btn" type="submit">Consult now</button>
             </div>
         </div>
         <div class="top-content col-lg-3">
             <div class="top-content-inner border">
                 <img src="{% static 'images/obstetrics.jpg' %}" alt="">
-                <h6>Obstetrics</h6>
+                <h6>Pregnancy Test</h6>
                 <button class="btn" type="submit">Consult now</button>
             </div>
         </div>
@@ -82,46 +82,60 @@
 
 <div class="avaiable-doctors-wrapper ">
     <div class="avaiable-doctors-inner p-5">
-        <h4>Top doctors avaiable</h4>
+        <h4>Top clinics /hospital avaiable</h4>
 
         <div class="avaiable-doctors row">
             <div class="avaiable-doctors-left col-lg-8">
                 <div class="doc-info border d-flex justify-content-around align-items-center">
-                    <img src="{% static 'images/doctor-smile.png' %}" alt="">
+                    <img src="{% static 'images/reception.png' %}" alt="">
                     <div class="doc-desc">
-                        <h5>Dr. Yugandar</h5>
+                        <h5>Vijaya Diagnosis Center</h5>
                         <button class="top mt-1 mb-2">top</button>
-                        <h6>Dentist</h6>
+                        <h6>Diagnosis Center</h6>
                         <p>21 Years experience</p>
-                        <p>Vasundhara Hospital, moosapet.</p>
+                        <p>HNo - 16-31, MIG.11/197, Landmark: Near KPHB 9th.</p>
+                        <button class="book btn mt-2 mr-2">Get Direction</button>
+                        <button class="book btn mt-2 mr-2">Call Now</button>
                     </div>
                     <div class="doc-appoint text-center">
-                        <span class="text-success"> <b>Rs. 320 /-</b></span> <br>
+                        <span class="text-success"> <b>Rs. 320/-</b></span> <br>
                         <button class="book btn">view</button>
                     </div>
                 </div>
                 <div class="doc-info border d-flex justify-content-around align-items-center">
-                    <img src="{% static 'images/doctor-smile.png' %}" alt="">
+                    <img src="{% static 'images/reception.png' %}" alt="">
                     <div class="doc-desc">
-                        <h5>Dr. Yugandar</h5>
+                        <h5>Sudha Hospital</h5>
                         <button class="top mt-1 mb-2">top</button>
-                        <h6>Dentist</h6>
+                        <h6>Multi Speciality Clinic</h6>
                         <p>21 Years experience</p>
-                        <p>Vasundhara Hospital, moosapet.</p>
+                        <p>HNo - 16-31, MIG.11/197, Landmark: Near KPHB 9th.</p>
+                        <button class="book btn mt-2 mr-2">Get Direction</button>
+                        <button class="book btn mt-2 mr-2">Call Now</button>
                     </div>
                     <div class="doc-appoint text-center">
-                        <span class="text-success"> <b>Rs. 320 /-</b></span> <br>
+                        <span class="text-success"> <b>Rs. 320/-</b></span> <br>
                         <button class="book btn">view</button>
                     </div>
                 </div>
             </div>
             <div class="avaiable-doctors-right p-0 col-lg-4 justify-items-self">
                 <div class="avaiable-doc-desc border p-4">
-                    <h4>Dr. Yugandar</h4>
-                    <p>Dentist</p>
-                    <p>Vasundhara Hospital, moosapet.</p>
+                    <h4>Sudha Hospital</h4>
+                    <p>Multi Speciality Clinic</p>
 
-                    <div class="appoint-detail">
+                    <div class="appoint-detail m-0">
+
+                        <div class="photos">
+                            <h5>Photos</h5>
+                            <div class="photos-inner d-flex">
+                                <img src="{% static 'images/sudha-1.jpg' %}" class="mr-2" alt="">
+                                <img src="{% static 'images/sudha-2.jpg' %}" class="mr-2" alt="">
+                                <img src="{% static 'images/sudha-3.jpg' %}" class="mr-2" alt="">
+                                <img src="{% static 'images/sudha-4.jpg' %}" class="mr-2" alt="">
+                                <img src="{% static 'images/vijaya.jpg' %}" class="mr-2" alt="">
+                            </div>
+                        </div>
                         <div class="services-timing d-flex">
                             <div class="services col-md-6 p-0">
                                 <h5>Services</h5>
@@ -142,17 +156,6 @@
                                     <li>Sun</li>
                                     <li>09:00 AM - 01:00 PM</li>
                                 </ul>
-                            </div>
-                        </div>
-
-                        <div class="photos">
-                            <h5>Photos</h5>
-                            <div class="photos-inner d-flex">
-                                <img src="{% static 'images/sudha-1.jpg' %}" class="mr-2" alt="">
-                                <img src="{% static 'images/sudha-2.jpg' %}" class="mr-2" alt="">
-                                <img src="{% static 'images/sudha-3.jpg' %}" class="mr-2" alt="">
-                                <img src="{% static 'images/sudha-4.jpg' %}" class="mr-2" alt="">
-                                <img src="{% static 'images/vijaya.jpg' %}" class="mr-2" alt="">
                             </div>
                         </div>
                         <!-- <button class="btn  btn-outline-success mb-5">Today</button>
@@ -179,10 +182,10 @@
                             <div class="mr-auto"></div>
                             <button class="btn  btn-outline-light">18:00</button>
                             <button class="btn  btn-outline-light">19:00</button>
-                        </div>
-
+                        </div> -->
+                        <h5 class="mt-2">Doctors in Sudha Hospital</h5>
                         <div class="doc-detail-desc d-flex align-items-center">
-                            <img src="{% static 'images/doctor-smile.png' %}" width="50" height="50"  alt="">
+                            <img src="{% static 'images/doctor-smile.png' %}" width="50" height="50" alt="">
                             <div class="doc-name">
                                 <h5>Dr. Yugandar</h5>
                                 <h6>Dentist</h6>
@@ -191,14 +194,14 @@
                             <button class="btn border">View</button>
                         </div>
                         <div class="doc-detail-desc d-flex align-items-center">
-                            <img src="{% static 'images/doctor-smile.png' %}" width="50" height="50"  alt="">
+                            <img src="{% static 'images/doctor-smile.png' %}" width="50" height="50" alt="">
                             <div class="doc-name">
-                                <h5>Vasundhara</h5>
-                                <h5>Hospital</h5>
+                                <h5>Dr. Yugandar</h5>
+                                <h5>Dentist</h5>
                             </div>
                             <div class="mr-auto"></div>
                             <button class="btn border">View</button>
-                        </div> -->
+                        </div>
                         <button class="book btn">Book Appointment</button>
                     </div>
                 </div>

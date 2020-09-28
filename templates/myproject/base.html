@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Custom Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@800&family=Roboto&display=swap"
+    rel="stylesheet">
+
     <!-- Favivon -->
     <link rel="shortcut icon" type="image/png" href="{% static 'images/heart.png' %}">
 
@@ -25,7 +27,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 
-    <title>onestephealth</title>
+    <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
     
@@ -36,7 +38,7 @@
         <a class="navbar-brand ml-5" href="#">
             <img src="{% static 'images/heart.png' %}" width="30" height="30"
                 class="d-inline-block align-top" alt="">
-            onestephealth.com
+            heltho.com
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,8 +69,9 @@
                 <option value="3">Three</option>
             </select>
             <input type="text" placeholder="Search for doctors, clinics, hospitals, etc">
+            <input type="submit" class="search ml-1" name="" id="" value="SEARCH">
             <div class="mr-auto"></div>
-            <button class="btn mr-5">Try <span class="rounded ml-2"> Easypay </span> </button>
+            <button class="btn mr-5"> <img src="{% static 'images/upi.png' %}" alt=""> </button>
         </div>
     </div>
 
@@ -85,6 +88,8 @@
         <div class="footer-top row p-5">
             <div class="footer-top-content-wrapper col-lg-3">
                 <div class="footer-top-content">
+                    <h5> <b> Heltho </b> </h5>
+                    <br>
                     <h5> <a href="#">Home </a> </h5>
                     <h5> <a href="#">Doctors </a> </h5>
                     <h5> <a href="#">Consults </a> </h5>
@@ -94,7 +99,8 @@
             </div>
             <div class="footer-top-content-wrapper col-lg-3">
                 <div class="footer-top-content">
-                    <h5> <a href="#"> <b>For patients </b></a> </h5>
+                    <h5> <b>For patients </b> </h5>
+                    <br>    
                     <h5> <a href="#">Search for doctors </a> </h5>
                     <h5> <a href="#">Search for clinics </a> </h5>
                     <h5> <a href="#">Search for hospital </a> </h5>
@@ -104,16 +110,17 @@
             </div>
             <div class="footer-top-content-wrapper col-lg-3">
                 <div class="footer-top-content">
-                    <h5> <a href="#"> <b>For Hospitals </b></a> </h5>
+                    <h5>  <b>For Hospitals </b></h5>
+                    <br>
                     <h5> <a href="#">Your Profile </a> </h5>
                     <h5> <a href="#">Account </a> </h5>
-                    <h5> <a href="#">Manage Patients </a> </h5>
                     <h5> <a href="#">Contact Us </a> </h5>
                 </div>
             </div>
             <div class="footer-top-content-wrapper col-lg-3">
                 <div class="footer-top-content">
-                    <h5> <a href="#">More </a> </h5>
+                    <h5> <b>More </b> </h5>
+                    <br>
                     <h5> <a href="#">Help </a> </h5>
                     <h5> <a href="#">Developers </a> </h5>
                     <h5> <a href="#">Privacy Policy </a> </h5>
@@ -125,9 +132,9 @@
         <div class="footer-bottom text-center">
             <a href="#">
                 <img src="{% static 'images/heart.png' %}" width="30" height="30" alt="">
-                onestephealth.com
+                heltho.com
             </a> <br>
-            <h6>Copyright © 2020, onestephealth. All rights reserved. </h6>
+            <h6>Copyright © 2020. All rights reserved. </h6>
         </div>
     </div>
 

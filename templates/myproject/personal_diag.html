@@ -1,0 +1,73 @@
+{% extends 'myproject/base.html' %}
+{% load static %}
+{% block title %} Vijaya Diagnosis Center {% endblock %}
+{% block content %}
+
+<!-- -------- Page Description Start -------- -->
+
+<div class="perosonal-diag-wrapper p-5">
+
+    <div class="diagnosis-desc">
+        <div class="diagnosis-desc-top row">
+            <div class="diagnosis-img col-md-4">
+                <img src="{% static 'images/diagnosis.jpg' %}" alt="">
+            </div>
+            <div class="diagnosis-short-desc">
+                <h3>Vijaya Diagnostic Center</h3>
+                <p class="m-0">Moosapet </p>
+                <p>Diagnostic Center</p>
+                <h6>21 years service</h6>
+                <h6>H-Number 16-31, MIG.II/197, Landmark: Near KPHB 9th</h6>
+                <button class="book btn mt-2 mr-2">Get Direction</button>
+                <button class="book btn mt-2 mr-2">Call Now</button>
+            </div>
+        </div>
+        <h4 class="mt-4">About</h4>
+        <p>
+            We at Vijaya Diagnostic Center exploit the vast opportunity in Homeopathy to work differently. Our mode of treatment at
+            New Life Homeo Care is different and innovative and the therapeutic results are safe and fast with high success rate
+            unlike the common popular belief that the results with homeopathy are delayed and uncertain. Many patients suffering
+            from difficult diseases are recovering and enjoying happy new life after undergoing treatment at our center.
+        </p>
+        <div class="services-timing d-flex mt-4">
+            <div class="services col-md-6 p-0">
+                <h4>Services</h4>
+                <ul>
+                    <li>Inra-Uterine</li>
+                    <li>Pregnancy Care</li>
+                    <li>NVD</li>
+                    <li>Lab Tests</li>
+                    <li>Disease in Pregnancy</li>
+                    <li>Well Women Healthcheck</li>
+                </ul>
+            </div>
+            <div class="timing col-md-6">
+                <h4>Timings</h4>
+                <ul>
+                    <li>Mon-Sat</li>
+                    <li>09:00 AM - 09:00 PM</li>
+                    <li>Sun</li>
+                    <li>09:00 AM - 01:00 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="photos mt-4">
+            <h4>Photos</h4>
+            <div class="photos-inner d-flex">
+                <img src="{% static 'images/sudha-1.jpg' %}" class="mr-2" alt="">
+                <img src="{% static 'images/sudha-2.jpg' %}" class="mr-2" alt="">
+                <img src="{% static 'images/sudha-3.jpg' %}" class="mr-2" alt="">
+                <img src="{% static 'images/sudha-4.jpg' %}" class="mr-2" alt="">
+                <img src="{% static 'images/vijaya.jpg' %}" class="mr-2" alt="">
+            </div>
+        </div>
+        <div class="diagnosis-desc-bottom row">
+        </div>
+    </div>
+
+</div>
+
+<!-- -------- Page Description End -------- -->
+
+
+{% endblock %}

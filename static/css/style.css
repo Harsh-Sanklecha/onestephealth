@@ -59,16 +59,18 @@ body {
   border: 1px solid #ccc;
 }
 
-.sub-nav button {
+.sub-nav .search {
   text-transform: none;
+  width: 5rem;
   background: var(--secondaryColor);
   border-radius: 2px;
-  border: 1px solid var(--secondaryColor);
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
 }
 
-.sub-nav button span {
-  background: var(--primaryColor);
-  padding: 0.2rem 0.5rem;
+.sub-nav button img {
+  height: 2rem;
 }
 
 .hero-wrapper .hero-content {
@@ -124,7 +126,6 @@ body {
 
 /* For start */
 .spec-wrapper h4 {
-  font-size: 1.3rem;
   font-family: var(--sans);
 }
 
@@ -149,12 +150,8 @@ body {
   padding: 1rem 2rem;
 }
 
-.spec-wrapper .spec-content .spec .spec-inner h6 {
+.spec-wrapper .spec-content .spec .spec-inner h5 {
   font-family: var(--sans);
-}
-
-.spec-wrapper .spec-content .spec .spec-inner p {
-  font-size: 0.9rem;
 }
 
 .spec-wrapper .spec-content .spec .spec-inner button {
@@ -173,19 +170,18 @@ body {
 
 /* Frequent section */
 .top {
-  margin: 1rem 0 2rem 0;
+  margin: 0.5rem 0 2rem 0;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 600;
-  padding: 0.2rem 0.8rem;
-  border-radius: 8px;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
   color: #fefefe;
   background: #009B10;
   border: 1px solid #009B10;
 }
 
 .frequent-wrapper h4 {
-  font-size: 1.3rem;
   font-family: var(--sans);
 }
 
@@ -197,8 +193,8 @@ body {
   text-align: center;
   padding: 1rem;
   border-radius: 20px;
-  -webkit-box-shadow: 5px 5px 8px #ccc;
-          box-shadow: 5px 5px 8px #ccc;
+  -webkit-box-shadow: 2px 2px 8px #ccc;
+          box-shadow: 2px 2px 8px #ccc;
 }
 
 .frequent-wrapper .frequent-content-wrapper .frequent-content .frequent-content img {
@@ -280,21 +276,14 @@ body {
 
 /* Quote */
 .quote-wrapper {
-  padding: 8rem;
-}
-
-.quote-wrapper .quote {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  padding: 5rem;
 }
 
 .quote-wrapper .quote h2 {
+  font-family: 'Lobster';
   color: #F4BEBE;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 5rem;
 }
 
 /* Footer */
@@ -306,6 +295,13 @@ body {
 .footer-wrapper a {
   color: #000;
   text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.footer-wrapper a:hover {
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
 }
 
 .footer-wrapper .footer-top-content-wrapper {
@@ -339,7 +335,6 @@ body {
 }
 
 .top-wrapper h4 {
-  font-size: 1.3rem;
   font-family: var(--sans);
 }
 
@@ -388,7 +383,6 @@ body {
 
 .avaiable-doctors-wrapper .avaiable-doctors-inner h4 {
   font-family: var(--sans);
-  font-size: 1.3rem;
 }
 
 .avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doctors-left {
@@ -422,6 +416,21 @@ body {
   font-size: 0.9rem;
 }
 
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doctors-left .doc-info .doc-desc .book {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  border: 1px solid var(--primaryColor);
+  border-radius: 3px;
+  background: var(--primaryColor);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doctors-left .doc-info .doc-desc .book:hover {
+  background: #fd99ff;
+}
+
 .avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doctors-left .doc-info .doc-appoint .book {
   padding: 0.5rem 1rem;
   margin: 0.5rem 0;
@@ -449,6 +458,27 @@ body {
 
 .avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc .appoint-detail {
   margin: 1rem 0;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc .appoint-detail .services-timing h5 {
+  font-family: var(--sans);
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc .appoint-detail .services-timing ul {
+  list-style-type: none;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc .appoint-detail .photos {
+  padding: 2rem 0;
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc .appoint-detail .photos h5 {
+  font-family: var(--sans);
+}
+
+.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc .appoint-detail .photos .photos-inner img {
+  height: 4rem;
+  width: 4rem;
 }
 
 .avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc .appoint-detail .active {
@@ -493,5 +523,54 @@ body {
 
 .avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc .appoint-detail .book:hover {
   background: #fd99ff;
+}
+
+.book {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  border: 1px solid var(--primaryColor);
+  border-radius: 5px;
+  background: var(--primaryColor);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.book:hover {
+  background: #fd99ff;
+}
+
+.diagnosis-desc .diagnosis-desc-top .diagnosis-img {
+  overflow: hidden;
+}
+
+.diagnosis-desc .diagnosis-desc-top .diagnosis-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.diagnosis-desc .diagnosis-desc-top .diagnosis-short-desc {
+  padding: 1rem 4rem;
+}
+
+.diagnosis-desc .diagnosis-desc-top .diagnosis-short-desc h3 {
+  font-family: var(--sans);
+}
+
+.diagnosis-desc h4 {
+  font-family: var(--sans);
+}
+
+.diagnosis-desc ul {
+  list-style-type: none;
+}
+
+.diagnosis-desc .photos {
+  padding: 2rem 0;
+}
+
+.diagnosis-desc .photos .photos-inner img {
+  height: 10rem;
+  width: 10rem;
 }
 /*# sourceMappingURL=style.css.map */
