@@ -15,3 +15,6 @@ def diagnosis(request):
 
 def personalDiag(request):
     return render(request, 'myproject/personal_diag.html')
+
+def personalDoc(request):
+    return render(request, 'myproject/personal_doc.html')

@@ -9,5 +9,6 @@ urlpatterns = [
     path('consult/', views.consult, name ="consult"),
     path('diagnosis/', views.diagnosis, name ="diagnosis"),
     path('vijaya/', views.personalDiag, name ="personalDiag"),
+    path('sujata/', views.personalDoc, name ="personalDoc"),
 
 ]

@@ -376,6 +376,21 @@ body {
 }
 
 /* Avaiable Doctors Left */
+.avaiable-doctors-wrapper .book {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  border: 1px solid var(--primaryColor);
+  border-radius: 3px;
+  background: var(--primaryColor);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.avaiable-doctors-wrapper .book:hover {
+  background: #fd99ff;
+}
+
 .avaiable-doctors-wrapper .avaiable-doctors-inner {
   -webkit-box-shadow: 10px 10px 10px #ccc;
           box-shadow: 10px 10px 10px #ccc;
@@ -414,36 +429,6 @@ body {
 .avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doctors-left .doc-info .doc-desc p {
   margin: 0;
   font-size: 0.9rem;
-}
-
-.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doctors-left .doc-info .doc-desc .book {
-  padding: 0.5rem 1rem;
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
-  border: 1px solid var(--primaryColor);
-  border-radius: 3px;
-  background: var(--primaryColor);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doctors-left .doc-info .doc-desc .book:hover {
-  background: #fd99ff;
-}
-
-.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doctors-left .doc-info .doc-appoint .book {
-  padding: 0.5rem 1rem;
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
-  border: 1px solid var(--primaryColor);
-  border-radius: 3px;
-  background: var(--primaryColor);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-.avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doctors-left .doc-info .doc-appoint .book:hover {
-  background: #fd99ff;
 }
 
 .avaiable-doctors-wrapper .avaiable-doctors-inner .avaiable-doc-desc {
@@ -525,6 +510,7 @@ body {
   background: #fd99ff;
 }
 
+/* Custom Button */
 .book {
   padding: 0.5rem 1rem;
   margin: 0.5rem 0;
@@ -540,6 +526,7 @@ body {
   background: #fd99ff;
 }
 
+/* Personal Diag page */
 .diagnosis-desc .diagnosis-desc-top .diagnosis-img {
   overflow: hidden;
 }
@@ -572,5 +559,71 @@ body {
 .diagnosis-desc .photos .photos-inner img {
   height: 10rem;
   width: 10rem;
+}
+
+.diagnosis-desc .diagnosis-desc-bottom {
+  padding: 2rem 0;
+}
+
+.diagnosis-desc .diagnosis-desc-bottom input {
+  width: 25rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.diagnosis-desc .diagnosis-desc-bottom .search {
+  width: 5rem;
+  padding: 0.7rem;
+  margin: 0;
+  background: var(--secondaryColor);
+  border-radius: 2px;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+}
+
+.diagnosis-desc .diagnosis-desc-bottom .diag-test {
+  padding: 2rem 0;
+}
+
+.diagnosis-desc .diagnosis-desc-bottom .diag-test .diag-test-inside {
+  margin: 1rem 0;
+  padding: 0 2rem;
+}
+
+.diagnosis-desc .diagnosis-desc-bottom .diag-test .diag-test-inside .doc-detail-desc img {
+  width: 8rem;
+  height: 5rem;
+}
+
+.diagnosis-desc .diagnosis-desc-bottom .avaiable-doctors-left {
+  padding: 1rem;
+}
+
+.diagnosis-desc .diagnosis-desc-bottom .avaiable-doctors-left .doc-info {
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 8px 15px #ccc;
+          box-shadow: 5px 8px 15px #ccc;
+}
+
+.diagnosis-desc .diagnosis-desc-bottom .avaiable-doctors-left .doc-info img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.diagnosis-desc .diagnosis-desc-bottom .avaiable-doctors-left .doc-info .doc-desc {
+  padding: 1rem 2rem;
+}
+
+.diagnosis-desc .diagnosis-desc-bottom .avaiable-doctors-left .doc-info .doc-desc h6 {
+  font-family: var(--sans);
+}
+
+.diagnosis-desc .diagnosis-desc-bottom .avaiable-doctors-left .doc-info .doc-desc p {
+  margin: 0;
+  font-size: 0.9rem;
 }
 /*# sourceMappingURL=style.css.map */

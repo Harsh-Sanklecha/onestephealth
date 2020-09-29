@@ -1,0 +1,82 @@
+{% extends 'myproject/base.html' %}
+{% load static %}
+{% block title %} Vijaya Diagnosis Center {% endblock %}
+{% block content %}
+
+<!-- -------- Page Description Start -------- -->
+
+<div class="perosonal-diag-wrapper p-5">
+    <div class="diagnosis-desc">
+        <div class="diagnosis-desc-top row">
+            <div class="diagnosis-img col-md-4">
+                <img src="{% static 'images/young-doctor.jpg' %}" alt="">
+            </div>
+            <div class="diagnosis-short-desc">
+                <h3>Dr. Sujata</h3>
+                <p class="m-0">MBBS, DGO </p>
+                <p>Infertility Specialist , Gynecologist , Obstetricia</p>
+                <h6>21 years service</h6>
+                <h6>Medical Registration</h6>
+                <button class="book btn mt-2 mr-2">Book Appointment</button>
+            </div>
+        </div>
+        <div class="services-timing d-flex mt-4">
+            <div class="services col-md-6 p-0">
+                <h4>Services</h4>
+                <ul>
+                    <li>Inra-Uterine</li>
+                    <li>Pregnancy Care</li>
+                    <li>NVD</li>
+                    <li>Lab Tests</li>
+                    <li>Disease in Pregnancy</li>
+                    <li>Well Women Healthcheck</li>
+                </ul>
+            </div>
+            <div class="timing col-md-6">
+                <h4>Timings</h4>
+                <ul>
+                    <li>Mon-Sat</li>
+                    <li>09:00 AM - 09:00 PM</li>
+                    <li>Sun</li>
+                    <li>09:00 AM - 01:00 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="photos mt-4">
+            <h4>Photos</h4>
+            <div class="photos-inner d-flex">
+                <img src="{% static 'images/sudha-1.jpg' %}" class="mr-2" alt="">
+                <img src="{% static 'images/sudha-2.jpg' %}" class="mr-2" alt="">
+                <img src="{% static 'images/sudha-3.jpg' %}" class="mr-2" alt="">
+                <img src="{% static 'images/sudha-4.jpg' %}" class="mr-2" alt="">
+                <img src="{% static 'images/vijaya.jpg' %}" class="mr-2" alt="">
+            </div>
+        </div>
+        <div class="diagnosis-desc-bottom">
+            <h4>Work Info</h4>
+            <div class="avaiable-doctors-left col-lg-8">
+                <div class="doc-info border d-flex justify-content-around align-items-center">
+                    <img src="{% static 'images/reception.png' %}" alt="">
+                    <div class="doc-desc">
+                        <h5>Vijaya Diagnosis Center</h5>
+                        <button class="top mt-1 mb-2">top</button>
+                        <h6>Diagnosis Center</h6>
+                        <p>21 Years experience</p>
+                        <p>HNo - 16-31, MIG.11/197, Landmark: Near KPHB 9th.</p>
+                        <button class="book btn mt-2 mr-2">Get Direction</button>
+                        <button class="book btn mt-2 mr-2">Call Now</button>
+                    </div>
+                    <div class="doc-appoint text-center">
+                        <span class="text-success"> <b>Rs. 320/-</b></span> <br>
+                        <button class="book btn">view</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------- Page Description End -------- -->
+
+
+{% endblock %}

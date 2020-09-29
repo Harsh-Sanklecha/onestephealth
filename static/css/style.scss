@@ -403,6 +403,20 @@ body{
 /* Avaiable Doctors Left */ 
 .avaiable-doctors-wrapper{
 
+    .book{
+        padding: 0.5rem 1rem;
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+        border: 1px solid var(--primaryColor);
+        border-radius: 3px;
+        background: var(--primaryColor);
+        transition: 0.5s ease;
+
+        &:hover{
+            background: #fd99ff;
+        }
+    }
+
     .avaiable-doctors-inner{
         box-shadow: 10px 10px 10px #ccc;
         
@@ -435,37 +449,6 @@ body{
                     p{
                         margin: 0;
                         font-size: 0.9rem;
-                    }
-
-                    .book{
-                        padding: 0.5rem 1rem;
-                        margin: 0.5rem 0;
-                        font-size: 0.9rem;
-                        border: 1px solid var(--primaryColor);
-                        border-radius: 3px;
-                        background: var(--primaryColor);
-                        transition: 0.5s ease;
-
-                        &:hover{
-                            background: #fd99ff;
-                        }
-                    }
-
-                }
-                .doc-appoint{
-
-                    .book{
-                        padding: 0.5rem 1rem;
-                        margin: 0.5rem 0;
-                        font-size: 0.9rem;
-                        border: 1px solid var(--primaryColor);
-                        border-radius: 3px;
-                        background: var(--primaryColor);
-                        transition: 0.5s ease;
-
-                        &:hover{
-                            background: #fd99ff;
-                        }
                     }
                 }
             }
@@ -557,6 +540,8 @@ body{
         }
     }
 }
+
+/* Custom Button */
 .book{
     padding: 0.5rem 1rem;
     margin: 0.5rem 0;
@@ -570,6 +555,8 @@ body{
         background: #fd99ff;
     }
 }
+
+/* Personal Diag page */
 .diagnosis-desc{
 
     .diagnosis-desc-top {
@@ -608,6 +595,74 @@ body{
             img{
                 height: 10rem;
                 width: 10rem;
+            }
+        }
+    }
+
+    .diagnosis-desc-bottom{
+        padding: 2rem 0;
+
+        input{
+            width: 25rem;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+        }
+
+        .search{
+            width: 5rem;
+            padding: 0.7rem;
+            margin: 0;
+            background: var(--secondaryColor);
+            border-radius: 2px;
+            font-size: 0.9rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .diag-test{
+            padding: 2rem 0;
+
+            .diag-test-inside{
+                margin: 1rem 0;
+                padding: 0 2rem;
+
+                .doc-detail-desc{
+
+                    img{
+                        width: 8rem;
+                        height: 5rem;
+                    }
+                }
+            }
+        }
+
+        .avaiable-doctors-left{
+            padding: 1rem;
+
+            .doc-info{
+                border-radius: 10px;
+                padding: 1rem;
+                margin: 1rem;
+                border-radius: 10px;
+                box-shadow: 5px 8px 15px #ccc;
+                
+                img{
+                    width: 10rem;
+                    height: 10rem;
+                }
+
+                .doc-desc{
+                    padding: 1rem 2rem;
+
+                    h6{
+                        font-family: var(--sans);
+                    }
+
+                    p{
+                        margin: 0;
+                        font-size: 0.9rem;
+                    }
+                }
             }
         }
     }
